@@ -179,6 +179,8 @@ Several new robust estimators and supporting tools were added:
 
 New models and statistical tests
 ------------------------------------
+- Scikit-learn-compatible wrappers for regression and binary classification models are available through the optional ``sklearn`` dependency. :issue:`9442`
+
 
 - :class:`statsmodels.multivariate.multivariate_ols.MultivariateLS`, a new
   multivariate least-squares model. :pr:`8919`
