@@ -75,6 +75,7 @@ test = [
     "pytest-xdist",
     "pytest-cov",
     "coverage[toml]",
+    "scikit-learn>=1.4",
     "meson",
     'ninja; sys_platform != "emscripten"',
 ]
