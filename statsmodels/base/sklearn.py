@@ -7,7 +7,7 @@ from sklearn.base import BaseEstimator, ClassifierMixin, RegressorMixin
 from sklearn.utils.multiclass import unique_labels
 from sklearn.utils.validation import check_X_y, check_array, check_is_fitted
 
-import statsmodels.api as sm
+from statsmodels.tools.tools import add_constant
 
 
 class SMWrapper(BaseEstimator):
@@ -43,7 +43,7 @@ class SMWrapper(BaseEstimator):
     def _prepare_exog(self, X):
         X = check_array(X, ensure_2d=True, dtype="numeric")
         if self.fit_intercept:
-            X = sm.add_constant(X, has_constant="skip")
+            X = add_constant(X, has_constant="skip")
         return X
 
     def _fit(self, X, y):
