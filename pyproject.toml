@@ -122,6 +122,10 @@ polars = [
     # Polars support
     "polars>=1.0.0",
 ]
+sklearn = [
+    # Scikit-learn compatibility wrappers
+    "scikit-learn>=1.4",
+]
 
 [project.urls]
 homepage = "https://www.statsmodels.org"
