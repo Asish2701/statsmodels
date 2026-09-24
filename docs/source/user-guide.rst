@@ -68,6 +68,7 @@ Statistics and Tools
    tools
    large_data
    optimization
+   sklearn
 
 Data Sets
 ---------
